@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang - NestFurniture</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="row">
+          <a href="index.html" class="navbar-brand">NestFurniture.</a>
+          <ul>
+            <li>
+              <a href="produk.html">Produk</a>
+            </li>
+            <li>
+              <a href="keranjang.html"><i class="bi bi-cart-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="cart">
+      <div class="container">
+        <h2 class="cart__title">Keranjang</h2>
+        <div class="carts">
+          <form action="" method="post">
+            <div class="card">
+              <table cellpadding="20">
+                <thead>
+                  <tr>
+                    <th>Gambar</th>
+                    <th>Nama</th>
+                    <th>Harga</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        src="./assets/products/sofa.png"
+                        alt="Product Image"
+                        width="70"
+                      />
+                    </td>
+                    <td>
+                      <div class="name">
+                        <div>
+                          <h4>Luxury Sofa</h4>
+                          <p>Kursi</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="price">Rp. 12JT</td>
+                    <td>1</td>
+                    <td>
+                      <div class="actions">
+                        <button type="button">
+                          <i class="bi bi-plus-circle"></i>
+                        </button>
+                        <button type="button">
+                          <i class="bi bi-dash-circle"></i>
+                        </button>
+                        <button type="button">
+                          <i class="bi bi-trash3"></i>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="./assets/products/sofa.png"
+                        alt="Product Image"
+                        width="70"
+                      />
+                    </td>
+                    <td>
+                      <div class="name">
+                        <div>
+                          <h4>Luxury Sofa</h4>
+                          <p>Kursi</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="price">Rp. 12JT</td>
+                    <td>1</td>
+                    <td>
+                      <div class="actions">
+                        <button type="button">
+                          <i class="bi bi-plus-circle"></i>
+                        </button>
+                        <button type="button">
+                          <i class="bi bi-dash-circle"></i>
+                        </button>
+                        <button type="button">
+                          <i class="bi bi-trash3"></i>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="info">
+              <button type="submit" class="btn bg-primary btn-checkout">
+                Checkout Keranjang
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2025 NestFurniture</p>
+    </footer>
+  </body>
+</html>
