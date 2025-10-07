@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daftar Produk - NestFurniture</title>
+    <title>Detail Produk - NestFurniture</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/detail-produk.css" />
   </head>
   <body>
     <header class="navbar">
@@ -24,90 +24,90 @@
         </div>
       </div>
     </header>
-    <section class="list-product">
+    <section class="detail-product">
       <div class="container">
-        <div class="filter">
-          <form action="" method="get" class="filter__search">
-            <input type="text" name="search" placeholder="Cari produk..." />
-            <button type="submit" class="btn bg-primary">Cari</button>
-          </form>
-          <button type="button" class="filter__filter-btn">
-            <i class="bi bi-funnel-fill"></i>
-          </button>
+        <div class="row">
+          <div class="thumbnail">
+            <img
+              src="./assets/products/sofa.png"
+              alt="Product Image"
+              loading="lazy"
+              class="thumbnail__preview-img"
+            />
+            <div class="thumbnail__list">
+              <button>
+                <img
+                  src="./assets/products/sofa.png"
+                  alt="Product Image"
+                  loading="lazy"
+                />
+              </button>
+              <button>
+                <img
+                  src="./assets/products/sofa.png"
+                  alt="Product Image"
+                  loading="lazy"
+                />
+              </button>
+              <button>
+                <img
+                  src="./assets/products/sofa.png"
+                  alt="Product Image"
+                  loading="lazy"
+                />
+              </button>
+              <button>
+                <img
+                  src="./assets/products/sofa.png"
+                  alt="Product Image"
+                  loading="lazy"
+                />
+              </button>
+              <button>
+                <img
+                  src="./assets/products/sofa.png"
+                  alt="Product Image"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="content">
+            <h1 class="content__title">Luxury Sofa</h1>
+            <h2 class="content__price">Rp. 12JT</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              ultricies, ligula at placerat fermentum, arcu mi varius lorem, vel
+              euism.... <br />
+              Read More
+            </p>
+            <div class="content__size">
+              <div class="content__size__head">
+                <h4>Ukuran :</h4>
+                <a href="#">Size Guide</a>
+              </div>
+              <div class="content__size__body">
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+              </div>
+            </div>
+            <div class="action">
+              <a href="checkout.html" class="btn bg-primary btn-checkout"
+                >Beli</a
+              >
+              <a href="keranjang.html" class="btn btn-cart"
+                ><i class="bi bi-cart-fill"></i
+              ></a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="similar-product">
+      <div class="container">
+        <h2 class="similar-product__title">Produk Serupa</h2>
         <div class="products">
-          <div class="product-item">
-            <a href="detail-produk.html">
-              <img
-                src="./assets/products/sofa.png"
-                alt="Product Image"
-                loading="lazy"
-              />
-              <div class="product-item__body">
-                <h2 class="product-item__body__title">Luxury Sofa</h2>
-                <h2 class="product-item__body__price">Rp. 12JT</h2>
-                <p class="product-item__body__description">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit...
-                </p>
-              </div>
-              <div class="product-item__footer">
-                <a href="checkout.html" class="btn bg-primary btn-checkout"
-                  >Beli</a
-                >
-                <a href="keranjang.html" class="btn btn-cart"
-                  ><i class="bi bi-cart-fill"></i
-                ></a>
-              </div>
-            </a>
-          </div>
-          <div class="product-item">
-            <a href="detail-produk.html">
-              <img
-                src="./assets/products/sofa.png"
-                alt="Product Image"
-                loading="lazy"
-              />
-              <div class="product-item__body">
-                <h2 class="product-item__body__title">Luxury Sofa</h2>
-                <h2 class="product-item__body__price">Rp. 12JT</h2>
-                <p class="product-item__body__description">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit...
-                </p>
-              </div>
-              <div class="product-item__footer">
-                <a href="checkout.html" class="btn bg-primary btn-checkout"
-                  >Beli</a
-                >
-                <a href="keranjang.html" class="btn btn-cart"
-                  ><i class="bi bi-cart-fill"></i
-                ></a>
-              </div>
-            </a>
-          </div>
-          <div class="product-item">
-            <a href="detail-produk.html">
-              <img
-                src="./assets/products/sofa.png"
-                alt="Product Image"
-                loading="lazy"
-              />
-              <div class="product-item__body">
-                <h2 class="product-item__body__title">Luxury Sofa</h2>
-                <h2 class="product-item__body__price">Rp. 12JT</h2>
-                <p class="product-item__body__description">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit...
-                </p>
-              </div>
-              <div class="product-item__footer">
-                <a href="checkout.html" class="btn bg-primary btn-checkout"
-                  >Beli</a
-                >
-                <a href="keranjang.html" class="btn btn-cart"
-                  ><i class="bi bi-cart-fill"></i
-                ></a>
-              </div>
-            </a>
-          </div>
           <div class="product-item">
             <a href="detail-produk.html">
               <img
