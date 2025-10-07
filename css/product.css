@@ -1,0 +1,70 @@
+@import url("./global.css");
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter .filter__search input {
+  padding: 15px 15px;
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #eaeaea;
+  margin-right: 5px;
+  transition: 0.1s ease-out all;
+}
+.filter .filter__search input:hover {
+  outline: 2px solid var(--accent-color);
+}
+.filter .filter__search input:focus {
+  outline: 2px solid var(--accent-color);
+}
+.filter .filter__search input:focus::placeholder {
+  color: var(--accent-color);
+}
+
+.filter .filter__search button:hover {
+  background-color: var(--accent-color-hover-state);
+}
+
+.filter .filter__filter-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.list-product {
+  padding: 40px 0px;
+}
+
+.list-product .container .products {
+  margin-top: 20px !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.list-product .container .products .product-item {
+  width: 100%;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .list-product .container .products {
+    gap: 1.5rem;
+  }
+
+  .list-product .container .products .product-item {
+    width: 31%;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  .list-product .container .products .product-item {
+    width: 31.6%;
+  }
+}
