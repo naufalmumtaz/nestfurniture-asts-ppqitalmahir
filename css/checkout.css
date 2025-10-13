@@ -126,6 +126,36 @@
   margin-top: 20px;
 }
 
+.checkout .row .col-2 .total-group {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.checkout .row .col-2 .total-group .total-group__item {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.checkout .row .col-2 .total-group .total-group__item .price {
+  font-weight: 600;
+}
+
+.checkout .row .col-2 .total-group .total-group__item.total {
+  font-weight: 600;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.checkout .row .col-2 .btn-payment {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+}
+
 /* TABLET */
 @media (min-width: 768px) {
   .checkout .row .col-1 {
