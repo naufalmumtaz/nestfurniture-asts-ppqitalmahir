@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - NestFurniture</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/checkout.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="row">
+          <a href="index.html" class="navbar-brand">NestFurniture.</a>
+          <ul>
+            <li>
+              <a href="produk.html">Produk</a>
+            </li>
+            <li>
+              <a href="keranjang.html"><i class="bi bi-checkout-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="checkout">
+      <div class="container">
+        <h2 class="checkout__title">Checkout</h2>
+        <div class="row">
+          <div class="col-1">
+            <div class="card">
+              <div class="input-group">
+                <div>
+                  <label class="form-input-label" for="name"
+                    >Nama Lengkap <span class="required-icon">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-input-text"
+                    placeholder="Cth: Budi Setya"
+                  />
+                </div>
+                <div>
+                  <label class="form-input-label" for="email"
+                    >Email <span class="required-icon">*</span></label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input-text"
+                    placeholder="Cth: budisetya@gmail.com"
+                  />
+                </div>
+                <div>
+                  <label class="form-input-label" for="phone"
+                    >No Telp <span class="required-icon">*</span></label
+                  >
+                  <input
+                    type="phone"
+                    name="phone"
+                    id="phone"
+                    class="form-input-text"
+                    placeholder="Cth: +62895385677825"
+                  />
+                </div>
+                <div>
+                  <label for="" class="form-input-label"
+                    >Alamat <span class="required-icon">*</span></label
+                  >
+                  <div class="address-input-group">
+                    <select
+                      name="country"
+                      id="country"
+                      class="form-input-select"
+                    >
+                      <option selected disabled>Pilih Negara</option>
+                      <option value="Indonesia">Indonesia</option>
+                    </select>
+                    <select
+                      name="province"
+                      id="province"
+                      class="form-input-select"
+                    >
+                      <option selected disabled>Pilih Provinsi</option>
+                      <option value="Jawa Tengah">Jawa Tengah</option>
+                    </select>
+                    <select name="city" id="city" class="form-input-select">
+                      <option selected disabled>Pilih Kota</option>
+                      <option value="Bandung">Bandung</option>
+                    </select>
+                    <select
+                      name="village"
+                      id="village"
+                      class="form-input-select"
+                    >
+                      <option selected disabled>Pilih Desa</option>
+                      <option value="Indonesia">Indonesia</option>
+                    </select>
+                    <textarea
+                      name="detail_address"
+                      id="detail_address"
+                      placeholder="Detail alamat, cth: JL. Pandansari No 47"
+                      class="form-input-text"
+                    ></textarea>
+                  </div>
+                </div>
+                <select
+                  name="payment_method"
+                  id="payment_method"
+                  class="form-input-select"
+                >
+                  <option selected disabled>Pilih Metode Pembayaran</option>
+                  <option value="QRIS">QRIS</option>
+                </select>
+              </div>
+              <div class="agreed">
+                <input type="checkbox" name="agreed" id="agreed" />
+                <label for="agreed"
+                  ><span class="required-icon">*</span> Saya telah menyetujui
+                  peraturan NestFurniture</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="products">
+              <div class="products__item">
+                <img
+                  src="./assets/products/sofa.png"
+                  alt="Product Image"
+                  width="70"
+                />
+                <div>
+                  <h4>Luxury Sofa <span class="amount">x1</span></h4>
+                  <p>RP. 12JT</p>
+                </div>
+              </div>
+              <div class="products__item">
+                <img
+                  src="./assets/products/sofa.png"
+                  alt="Product Image"
+                  width="70"
+                />
+                <div>
+                  <h4>Luxury Sofa <span class="amount">x1</span></h4>
+                  <p>RP. 12JT</p>
+                </div>
+              </div>
+            </div>
+            <select name="discount" id="discount" class="form-input-select">
+              <option selected disabled>Pilih Diskon</option>
+              <option value="1212">12.12</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2025 NestFurniture</p>
+    </footer>
+  </body>
+</html>
