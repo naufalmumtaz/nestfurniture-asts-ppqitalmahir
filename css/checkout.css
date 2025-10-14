@@ -58,7 +58,7 @@
   background-color: white;
   padding: 15px;
   border: none;
-  width: 100%;
+  width: 100% !important;
   border-radius: 15px;
 }
 
@@ -70,12 +70,13 @@
 
 .checkout .row .col-1 .card .address-input-group {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  gap: 15px;
 }
 
 .checkout .row .col-1 .card .address-input-group textarea {
-  grid-column: 1 / 3;
+  grid-column: 1 / 2;
   height: 100px;
 }
 
@@ -156,6 +157,27 @@
   font-weight: 400;
 }
 
+.modal .modal__content .modal__content__body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.modal .modal__content .modal__content__body img {
+  width: 5em;
+}
+
+.modal .modal__content .modal__content__body .btn-invoice:hover {
+  background-color: var(--accent-color-hover-state);
+}
+
+.modal .modal__content .modal__content__footer {
+  text-align: center;
+}
+
 /* TABLET */
 @media (min-width: 768px) {
   .checkout .row .col-1 {
@@ -166,6 +188,14 @@
     width: 40%;
     margin-top: 0;
     padding-left: 20px;
+  }
+  .checkout .row .col-1 .card .address-input-group {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .checkout .row .col-1 .card .address-input-group textarea {
+    grid-column: 1 / 3;
   }
 }
 
